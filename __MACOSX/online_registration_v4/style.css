@@ -95,11 +95,11 @@ select {
   margin-bottom: 30px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   background-color: rgb(214, 202, 202);
 }
 
-select:focus { 
+select:focus, textarea:focus  { 
   background-color: #384047;
 
 }
