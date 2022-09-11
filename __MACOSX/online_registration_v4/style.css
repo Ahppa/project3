@@ -1,4 +1,7 @@
-
+* {
+  box-sizing: border-box;
+  
+}
 body {
   font-family: 'Merriweather', sans-serif;
   color: #384047;
@@ -13,6 +16,8 @@ form {
   padding: 0px;
   background: #f4f7f8;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -41,10 +46,13 @@ h3 {
 
 }
 
-#p2, #text1 {
+#p2, #text1, p {
 
 font-size: 15px;
+color:#a0a0a9;
 }
+
+
 
 input[name="p1_text"] {
   display: none;  
@@ -80,15 +88,20 @@ select {
   margin-top: 5px;
   outline: 0;
   padding: 10px;
-  width: 90%;
+  width: 100%;
   background-color: #d7dcdd;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,255,0,0.03) inset;
   margin-bottom: 30px;
 }
 
-input:focus, textarea {
+input:focus {
   background-color: rgb(214, 202, 202);
+}
+
+select:focus { 
+  background-color: #384047;
+
 }
 
 ::placeholder {
@@ -119,7 +132,16 @@ select {
 }
 
 #text1 {
-  height: 80px;
+  height: 100px;
+  
+}
+.text1 {
+
+  font-size: 14px;
+}
+textarea {
+
+  margin-top: 10px;
 }
 
 button {
@@ -133,7 +155,7 @@ button {
   width: 100%;
   border: 1px solid #3ac162;
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
 }
 
@@ -151,6 +173,7 @@ fieldset {
 label {
    display: inline;
    padding-left: 0px;
+   color: #6e7583;
   }
 
   label[for="p1"] {
@@ -185,6 +208,7 @@ footer {
    width: 400px;
    line-height: 26px;
    margin-bottom: 10px;
+   
  }
 #name {
   margin-left: 35px;
@@ -204,7 +228,7 @@ footer {
 
 #zip {
   margin-left: 45px;
-  width: 20%;
+  width: 25%;
   display: inline;
 }
 
@@ -213,8 +237,9 @@ footer {
 }
 
  .legend1 {
-   padding: 20px 337px 20px 0px;
+   padding: 30px 337px 20px 0px;
    font-size: 14px;
+   
  }
 
  .legend2{
@@ -230,9 +255,16 @@ footer {
  textarea,
  select {
     padding: 10px;
-    width: 70%;
-    height: 20px;
+    width: 74%;
+    height: 35px;
 }
+
+#address,
+#city, #state {
+
+  height: 35px;
+}
+
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -258,7 +290,7 @@ label[for="text1"] {
 }
 
 button {
- width: 105%;
+ width: 100%;
 }
 
 }
